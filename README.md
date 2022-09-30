@@ -8,7 +8,7 @@ I want to do some sort of an app where you can mark what MLB stadiums you have b
 #### Documentation
 
 ## Game?
-I also think it would be cool to do some sort of game. I'm not sure what it would look like yet.
+I'm not sure what it would look like yet but I think it would be cool to do some sort of game. 
 
 ![Logo]()
 
