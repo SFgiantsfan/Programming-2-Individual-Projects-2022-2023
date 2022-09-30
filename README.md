@@ -7,11 +7,12 @@ I want to do some sort of an app where you can mark what MLB stadiums you have b
 
 #### Documentation
 
-
-## Other Idea
-
-Description
+## Game?
+I also think it would be cool to do some sort of game. I'm not sure what it would look like yet.
 
 ![Logo]()
 
 #### Documentation
+
+
+This is all I have for now but I am still brainstorming more Ideas and I will add them as I think of them.
