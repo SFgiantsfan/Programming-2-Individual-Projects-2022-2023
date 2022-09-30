@@ -1,1 +1,1 @@
-# Programming-2-Individual-projects-2022-2023
+# Programming 2 Individual Project
