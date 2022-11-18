@@ -4,6 +4,7 @@
 I want to do some sort of an app where you can mark what MLB stadiums you have been to, make notes about the trip, etc.
 
 ![Logo]()
+![Flowchart](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Individual%20Project%20Flowchart.jpg?raw=true)
 
 #### Documentation
 
