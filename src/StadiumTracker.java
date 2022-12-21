@@ -5,16 +5,16 @@ public class StadiumTracker extends Teams {
 	private String notes;
 
 	public StadiumTracker() {
-
+		System.out.println("Test");
 	}
 
-	String team() {
+	/*String team() {
 		if(team[0][1] == "Atlanta") {
 			return "Hi";
 		} else {
 			return "no";
 		}
 		
-	}
+	}*/
 
 }
