@@ -114,16 +114,30 @@ class Teams{
   team [12][4] = "Petco Park";
   team [12][5] = "San Diego";
   
+  // San Francisco Giants
+  team [13][0] = "Giants";
+  team [13][1] = "National League";
+  team [13][2] = "West";
+  team [13][3] = "Barry Bonds";
+  team [13][4] = "Oracle Park";
+  team [13][5] = "San Francisco";
+  
+  // American Leauge
+  // AL East
+  // Baltimore Orioles
+  team [14][0] = "Orioles";
+  team [14][1] = "American League";
+  team [14][2] = "East";
+  team [14][3] = "Cal Ripken Jr.";
+  team [14][4] = "Camden Yards";
+  team [14][5] = "Baltimore";
+  
   }
 }
 
 
 
 
-
-//  {"Giants", "National League", "West", "Barry Bonds", "San Francisco", "Oracle Park"},
-//  
-//  {"Orioles", "American League", "East", "Cal Ripken Jr.", "Baltimore", "Camden Yards"},
 //  {"Red Sox", "American League", "East", "Ted Williams", "Boston", "Fenway Park"},
 //  {"Yankees", "American League", "East", "Derek Jeter", "New York", "Yankee Stadium"},
 //  {"Rays", "American League", "East", "Evan Longoria", "Tampa Bay", "Tropicana Field"},
