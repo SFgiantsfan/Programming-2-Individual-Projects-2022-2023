@@ -1,7 +1,7 @@
 // Ethan Reynolds || AP Programming Individual Project || 2023
 
 boolean play;
-Button[] button = new Button[2];
+Button[] buttons = new Button[2];
 StadiumTracker s1 = new StadiumTracker();
 TeamNameGuesser t1 = new TeamNameGuesser();
 PImage MLB;
@@ -9,7 +9,7 @@ PImage MLB;
 void setup() {
   size (1000,1000);
   play = true;
-  button[0] = new Button(20,180,20,20, "Stadium Tracker", color(#31A30F), color(#99F07F));
+  buttons[0] = new Button(20,180,200,200, "Stadium Tracker", color(0), color(255));
   MLB = loadImage("MLB.jpg");
 }
 
@@ -20,25 +20,25 @@ void draw() {
     startScreen();
   } 
   
-  //for (int i=0; 1<button.length; i++) {
-    //button[0].display();
-    //button[0].hover(mouseX, mouseY);
-  //}
-  if(keyPressed) {
-    if (key == '1') {
-      stadiumTracker();
-    } else if (key == '2'){
-      teamNameGuesser();
-    } 
+  for (int i=0; i<buttons.length; i++) {
+    buttons[0].display();
+    buttons[0].hover(mouseX, mouseY);
   }
+  //if(keyPressed) {
+  //  if (key == '1') {
+  //    stadiumTracker();
+  //  } else if (key == '2'){
+  //    teamNameGuesser();
+  //  } 
+  //}
 }
 
 void mousePressed() {
-  //for (int i=0; i<button.length; i++) {
-    //if(button[0].on){
-      //loop();
-    //}
-  //}
+  for (int i=0; i<buttons.length; i++) {
+    if(buttons[0].on){
+      teamNameGuesser();
+    }
+  }
 }
 
 void startScreen() {
@@ -59,9 +59,12 @@ void startScreen() {
 
 void stadiumTracker(){
   background (210);
+  buttons[0].delete();
   s1.display();
 }
 
 void teamNameGuesser() {
+  buttons[0].delete();
+  background(210);
   t1.play();
 }
