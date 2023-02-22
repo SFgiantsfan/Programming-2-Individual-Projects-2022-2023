@@ -25,26 +25,23 @@ class Button{
       fill(c1);
     }
     rect(x,y,w,h,5);
-    fill(0);
+    fill(255);
     textAlign(LEFT);
-    if(val.equals("sin")){
-      text(val,x+3,y+15);
-    } else if(val.equals(".")){
-      text(val,x+8,y+12);
-    } else if(val.equals("|x|")){
-      text(val,x+4.5,y+14);
-    } else if(val.equals("x")){
-      text(val,x+8,y+14);
-    } else if(val.equals("-")){
-      text(val,x+8,y+14);
-    } else{
-      textSize(13);
-      text(val,x+7,y+15);
-    }
+    text(val, x+7, y+12);
   }
   
   // Rollover Method
   void hover(int mx, int my) {
     on = (mx<x+w && mx>x && my>y && my<y+h);
+  }
+  
+  // Delete Method
+  void delete() {
+    x=-100;
+    y=-100;
+    w = 0;
+    h = 0;
+    c1 = 0;
+    c2 = 0;
   }
 }
