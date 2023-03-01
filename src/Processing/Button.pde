@@ -4,6 +4,7 @@ class Button{
   boolean on;
   String val;
   color c1, c2;
+  //PImage logo;
   
   // Constructor
   Button(float tempX, float tempY, float tempW, float tempH, String tempVal, color tempC1, color tempC2) {
@@ -14,6 +15,7 @@ class Button{
     val = tempVal;
     c1 = tempC1;
     c2 = tempC2;
+    //logo = tempLogo;
     on = false; // Button always starts as off
   }
   
@@ -27,7 +29,9 @@ class Button{
     rect(x,y,w,h,5);
     fill(255);
     textAlign(LEFT);
-    text(val, x+7, y+12);
+    textSize(20);
+    text(val, x+7, y+20);
+    //image(image, x+10,y+15);
   }
   
   // Rollover Method
