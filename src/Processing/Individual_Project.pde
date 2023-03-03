@@ -7,15 +7,30 @@ StadiumTracker s1 = new StadiumTracker();
 TeamNameGuesser t1 = new TeamNameGuesser();
 Teams team = new Teams();
 PImage MLB, Braves;
+int x, y, w, h;
+float k;
 
 void setup() {
   size (1000, 1000);
+  x=30;
+  y=180;
+  w=150;
+  h=45;
   play = true;
-  buttons[0] = new Button(20, 180, 150, 45, "Stadium Tracker", color(0), color(100));
-  teamsB[0] = new Button(250, 180, 150, 45, team.team[0][0], color(0), color(100));
-  teamsB[1] = new Button(405, 180, 150, 45, team.team[0][0], color(0), color(100));
-  teamsB[2] = new Button(560, 180, 150, 45, team.team[0][0], color(0), color(100));
-  teamsB[3] = new Button(715, 180, 150, 45, team.team[0][0], color(0), color(100));
+  buttons[0] = new Button(500, 750, 150, 45, "Stadium Tracker", color(0), color(100));
+  //x+=40;
+  for (int t=0; t<15; t++) {
+    teamsB[t] = new Button(x, y, w, h, team.team[t][0], color(0), color(100));
+    x+=200;
+    if(t==4){
+      x=30;
+      y+=150;
+    } else if(t==9){
+      x=30;
+      y+=150;
+    }
+  }
+  
   MLB = loadImage("MLB.jpg");
   tng = false;
 }
@@ -51,16 +66,20 @@ void draw() {
 
   // Team Name Guesser
   if (tng == true) {
-    for (int i=0; i<buttons.length; i++) {
-      teamsB[0].display();
-      teamsB[0].hover(mouseX, mouseY);
+    k = random(0,15);
+    int t = int(k);
+    for (int b=0; b<15; b++) {
+      teamsB[b].display();
+      teamsB[b].hover(mouseX, mouseY);
     }
     fill (0);
     textAlign(CENTER);
     text("Welcome! Take your first guess!", width/2, 20);
-    if(mousePressed == true){
-      if (teamsB[0].on) {
+    if (mousePressed == true) {
+      if (teamsB[t].on) {
         text("Test", width/2, 50);
+      } else if(teamsB[0].on == false){
+        text("wrong", width/2,100);
       }
     }
   }
