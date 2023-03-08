@@ -1,7 +1,7 @@
 // Ethan Reynolds || AP Programming Individual Project || 2023
 
-boolean play, tng;
-Button[] buttons = new Button[2];
+boolean play, tng, st;
+Button[] buttons = new Button[3];
 Button[] teamsB = new Button[32];
 StadiumTracker s1 = new StadiumTracker();
 TeamNameGuesser t1 = new TeamNameGuesser();
@@ -16,23 +16,34 @@ void setup() {
   y=180;
   w=150;
   h=45;
+  k = random(0, 15);
   play = true;
-  buttons[0] = new Button(500, 750, 150, 45, "Stadium Tracker", color(0), color(100));
+  // Was 750 for y
+  buttons[0] = new Button(350, 450, 150, 45, "Team Name Guesser", color(0), color(100));
+  buttons[1] = new Button(550, 450, 150, 45, "Stadium Tracker", color(0), color(100));
+  buttons[2] = new Button(550, 450, 150, 45, "Home", color(0), color(100));
   //x+=40;
-  for (int t=0; t<15; t++) {
+  for (int t=0; t<19; t++) {
     teamsB[t] = new Button(x, y, w, h, team.team[t][0], color(0), color(100));
     x+=200;
-    if(t==4){
+    if (t==4) {
       x=30;
       y+=150;
-    } else if(t==9){
+    } else if (t==9) {
+      x=30;
+      y+=150;
+    } else if (t==14) {
+      x=30;
+      y+=150;
+    } else if (t==19) {
       x=30;
       y+=150;
     }
   }
-  
+
   MLB = loadImage("MLB.jpg");
   tng = false;
+  st = false;
 }
 
 void draw() {
@@ -42,9 +53,9 @@ void draw() {
     startScreen();
   }
 
-  for (int i=0; i<buttons.length; i++) {
-    buttons[0].display();
-    buttons[0].hover(mouseX, mouseY);
+  for (int i=0; i<2; i++) {
+    buttons[i].display();
+    buttons[i].hover(mouseX, mouseY);
   }
   //if(keyPressed) {
   //  if (key == '1') {
@@ -57,31 +68,51 @@ void draw() {
   if (mousePressed == true) {
     for (int j=0; j<buttons.length; j++) {
       if (buttons[0].on) {
-        buttons[0].delete();
+        buttons[j].delete();
         background(210);
         tng = true;
+      } else if (buttons[1].on) {
+        buttons[j].delete();
+        background(210);
+        st = true;
       }
     }
   }
 
   // Team Name Guesser
   if (tng == true) {
-    k = random(0,15);
+
     int t = int(k);
-    for (int b=0; b<15; b++) {
+    for (int b=0; b<19; b++) {
       teamsB[b].display();
       teamsB[b].hover(mouseX, mouseY);
     }
+    
+      buttons[2].display();
+      buttons[2].hover(mouseX, mouseY);
+    
     fill (0);
     textAlign(CENTER);
     text("Welcome! Take your first guess!", width/2, 20);
-    if (mousePressed == true) {
+    if (mousePressed == true && tng == true) {
       if (teamsB[t].on) {
         text("Test", width/2, 50);
-      } else if(teamsB[0].on == false){
-        text("wrong", width/2,100);
+      } else if (t1.guesses==0) {
+        text(team.team[t][1], width/2, 100);
+        t1.guesses++;
+      } else if (t1.guesses==1) {
+        text(team.team[t][2], width/2, 120);
       }
     }
+  }
+
+  // Stadium Tracker
+  if (st == true) {
+    fill(0);
+    textAlign(CENTER);
+    text("test", width/2, 500);
+      buttons[2].display();
+      buttons[2].hover(mouseX, mouseY);
   }
 }
 
