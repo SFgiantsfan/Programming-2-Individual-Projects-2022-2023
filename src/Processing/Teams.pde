@@ -132,13 +132,37 @@ class Teams{
   team [14][4] = "Camden Yards";
   team [14][5] = "Baltimore";
   
+  // Boston Red Sox
+  team [15][0] = "Red Sox";
+  team [15][1] = "American League";
+  team [15][2] = "East";
+  team [15][3] = "Ted Williams";
+  team [15][4] = "Boston";
+  team [15][5] = "Fenway Park";
+  
+  // New York Yankees
+  team [16][0] = "Yankees";
+  team [16][1] = "American League";
+  team [16][2] = "East";
+  team [16][3] = "Derek Jeter";
+  team [16][4] = "New York";
+  team [16][5] = "Yankee Stadium";
+  
+  // Tampa Bay Rays
+  team [17][0] = "Rays";
+  team [17][1] = "American League";
+  team [17][2] = "East";
+  team [17][3] = "Evan Longoria";
+  team [17][4] = "Tampa Bay";
+  team [17][5] = "Tropicana Field";
+  
+  // Toronto Blue Jays
+  team [18][0] = "Blue Jays";
+  team [18][1] = "American League";
+  team [18][2] = "East";
+  team [18][3] = "Roberto Alomar";
+  team [18][4] = "Toronto";
+  team [18][5] = "Rogers Centre";
+  
   }
 }
-
-
-
-
-//  {"Red Sox", "American League", "East", "Ted Williams", "Boston", "Fenway Park"},
-//  {"Yankees", "American League", "East", "Derek Jeter", "New York", "Yankee Stadium"},
-//  {"Rays", "American League", "East", "Evan Longoria", "Tampa Bay", "Tropicana Field"},
-//  {"Blue Jays", "American League", "East", "Roberto Alomar", "Toronto", "Rogers Centre"}
