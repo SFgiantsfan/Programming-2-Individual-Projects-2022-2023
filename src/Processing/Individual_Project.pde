@@ -18,30 +18,33 @@ void setup() {
   w=150;
   h=45;
   screen = 0;
-  k = random(0, 15);
+  k = random(0, 29);
   t = int(k);
   correct = false;
   play = true;
   // Was 750 for y
-  buttons[0] = new Button(250, 750, 200, 45, "Team Name Guesser", color(0), color(100));
+  buttons[0] = new Button(250, 650, 200, 45, "Team Name Guesser", color(0), color(100));
   buttons[1] = new Button(600, 750, 150, 45, "Stadium Tracker", color(0), color(100));
-  buttons[2] = new Button(550, 450, 150, 45, "Home", color(0), color(100));
+  buttons[2] = new Button(550, 750, 150, 45, "Home", color(0), color(100));
   //x+=40;
-  for (int t=0; t<19; t++) {
+  for (int t=0; t<30; t++) {
     teamsB[t] = new Button(x, y, w, h, team.team[t][0], color(0), color(100));
     x+=200;
     if (t==4) {
       x=30;
-      y+=150;
+      y+=100;
     } else if (t==9) {
       x=30;
-      y+=150;
+      y+=100;
     } else if (t==14) {
       x=30;
-      y+=150;
+      y+=100;
     } else if (t==19) {
       x=30;
-      y+=150;
+      y+=100;
+    } else if (t==24) {
+      x=30;
+      y+=100;
     }
   }
 
@@ -49,21 +52,24 @@ void setup() {
   y=180;
   h=60;
 
-  for (int t=0; t<19; t++) {
+  for (int t=0; t<30; t++) {
     staB[t] = new Button(x, y, w, h, team.team[t][4], color(0), color(100));
     x+=200;
     if (t==4) {
       x=30;
-      y+=150;
+      y+=100;
     } else if (t==9) {
       x=30;
-      y+=150;
+      y+=100;
     } else if (t==14) {
       x=30;
-      y+=150;
+      y+=100;
     } else if (t==19) {
       x=30;
-      y+=150;
+      y+=100;
+    } else if (t==24) {
+      x=30;
+      y+=100;
     }
   }
 
@@ -178,6 +184,10 @@ void mousePressed() {
     //} else if (t1.guesses==1) {
     //  t1.guesses++;
   }
+  
+  if(buttons[2].on){
+    screen = 0;
+  }
 }
 
 void startScreen() {
@@ -209,7 +219,7 @@ void stadiumTracker() {
   //buttons[2].hover(mouseX, mouseY);
   text("What stadium did you go to?", width/2, 20);
 
-  for (int b=0; b<19; b++) {
+  for (int b=0; b<30; b++) {
     staB[b].display();
     staB[b].hover(mouseX, mouseY);
   }
@@ -218,7 +228,7 @@ void stadiumTracker() {
 void teamNameGuesser() {
   buttons[0].delete();
   background(210);
-  for (int b=0; b<19; b++) {
+  for (int b=0; b<30; b++) {
     teamsB[b].display();
     teamsB[b].hover(mouseX, mouseY);
   }
@@ -231,12 +241,32 @@ void teamNameGuesser() {
   text("Welcome! Take your first guess!", width/2, 20);
 
   if (correct == true) {
-    text("Test", width/2, 50);
+    text("You got it!", width/2, 50);
+    text(team.team[t][1], width/2, 100);
+    text(team.team[t][2], width/2, 120);
+    text(team.team[t][3], width/2, 140);
+    text(team.team[t][4], width/2, 160);
+    text(team.team[t][5], width/2, 180);
   } else if (t1.guesses==1) {
     text(team.team[t][1], width/2, 100);
   } else if (t1.guesses==2) {
     text(team.team[t][1], width/2, 100);
     text(team.team[t][2], width/2, 120);
+  } else if (t1.guesses==3){
+    text(team.team[t][1], width/2, 100);
+    text(team.team[t][2], width/2, 120);
+    text(team.team[t][3], width/2, 140);
+  } else if (t1.guesses==4){
+    text(team.team[t][1], width/2, 100);
+    text(team.team[t][2], width/2, 120);
+    text(team.team[t][3], width/2, 140);
+    text(team.team[t][4], width/2, 160);
+  } else if (t1.guesses==5){
+    text(team.team[t][1], width/2, 100);
+    text(team.team[t][2], width/2, 120);
+    text(team.team[t][3], width/2, 140);
+    text(team.team[t][4], width/2, 160);
+    text(team.team[t][5], width/2, 180);
   }
 }
 //}
