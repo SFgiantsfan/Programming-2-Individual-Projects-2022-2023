@@ -1,8 +1,8 @@
 class TeamNameGuesser extends Teams {
   // Member Varuiables
-  private int guesses;
-  private boolean correct, play;
-  private int tn;
+  int guesses;
+  boolean correct, play;
+  int tn;
   Button[] buttons = new Button[2];
 
   // Constructor
@@ -16,31 +16,50 @@ class TeamNameGuesser extends Teams {
 
 
   // Member Methods
-  //public void play() {
-  //  fill(0);
-  //  //for (int i=0; i<buttons.length; i++) {
-  //  //  buttons[0].display();
-  //  //  buttons[0].hover(mouseX, mouseY);
-  //  //}
 
+  void play(int t) {
+    fill (0);
+    textAlign(CENTER);
+    text("Welcome! Take your first guess!", width/2, 20);
 
-  //  textAlign(CENTER);
-  //  text("Welcome! Take your first guess!", width/2, 20);
-  //  if (mousePressed) {
-  //    if (key == '1') {
-  //      text("You got it!\nIf you want to play again, press 1", 100, 100);
-  //      play = false;
-  //      if (keyPressed) {
-  //        if (key == '1') {
-  //        }
-  //      } else if (key == '4') {
-  //        text(team[tn][0], width/2, height/2);
-  //      }
-  //    }
-  //  }
-  //}
-  
-  int guess(){
+    if (correct == true) {
+      text("You got it!", width/2, 50);
+      text(team[t][1], width/2, 80);
+      text(team[t][2], width/2, 100);
+      text(team[t][3], width/2, 120);
+      text(team[t][4], width/2, 140);
+      text(team[t][5], width/2, 160);
+    } else if (guesses==1) {
+      text(team[t][1], width/2, 80);
+    } else if (guesses==2) {
+      text(team[t][1], width/2, 80);
+      text(team[t][2], width/2, 100);
+    } else if (guesses==3) {
+      text(team[t][1], width/2, 80);
+      text(team[t][2], width/2, 100);
+      text(team[t][3], width/2, 120);
+    } else if (guesses==4) {
+      text(team[t][1], width/2, 80);
+      text(team[t][2], width/2, 100);
+      text(team[t][3], width/2, 120);
+      text(team[t][4], width/2, 140);
+    } else if (guesses==5) {
+      text(team[t][1], width/2, 80);
+      text(team[t][2], width/2, 100);
+      text(team[t][3], width/2, 120);
+      text(team[t][4], width/2, 140);
+      text(team[t][5], width/2, 160);
+    } else if (guesses == 6) {
+      text("You Failed :(", width/2, 50);
+      text(team[t][1], width/2, 80);
+      text(team[t][2], width/2, 100);
+      text(team[t][3], width/2, 120);
+      text(team[t][4], width/2, 140);
+      text(team[t][5], width/2, 160);
+    }
+  }
+
+  int guess() {
     return guesses++;
   }
 }
