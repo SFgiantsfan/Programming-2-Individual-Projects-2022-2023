@@ -44,7 +44,7 @@ class Teams{
   team [4][1] = "National League";
   team [4][2] = "East";
   team [4][3] = "Jimmy Rollins";
-  team [4][4] = "Citizens Bank Park";
+  team [4][4] = "Citizens Bank\nPark";
   team [4][5] = "Philadelphia";
 
   
@@ -62,7 +62,7 @@ class Teams{
   team [6][1] = "National League";
   team [6][2] = "Central";
   team [6][3] = "Pete Rose";
-  team [6][4] = "Great American Ball Park";
+  team [6][4] = "Great American\nBall Park";
   team [6][5] = "Cincinati";
   
   // Milwaukee Brewers
@@ -70,7 +70,7 @@ class Teams{
   team [7][1] = "National League";
   team [7][2] = "Central";
   team [7][3] = "Christian Yelich";
-  team [7][4] = "American Family Field";
+  team [7][4] = "American Family\nField";
   team [7][5] = "Milwaukee";
   
   // Pittsburgh Pirates
@@ -186,7 +186,7 @@ class Teams{
   team [21][1] = "American League";
   team [21][2] = "Central";
   team [21][3] = "Frank Thomas";
-  team [21][4] = "Guaranteed Rate Field";
+  team [21][4] = "Guaranteed Rate\nField";
   team [21][5] = "Chicago";
 
   // Kansas City Royals
@@ -194,7 +194,7 @@ class Teams{
   team [22][1] = "American League";
   team [22][2] = "Central";
   team [22][3] = "George Brett";
-  team [22][4] = "Kauffman Stadium";
+  team [22][4] = "Kauffman\nStadium";
   team [22][5] = "Kansas City";
 
   // Minnesota Twins
@@ -227,7 +227,7 @@ class Teams{
   team [26][1] = "American League";
   team [26][2] = "West";
   team [26][3] = "Nolan Ryan";
-  team [26][4] = "Angel Stadium of Anaheim";
+  team [26][4] = "Angel Stadium of\nAnaheim";
   team [26][5] = "Los Angeles";
 
   // Oakland Athletics
@@ -235,7 +235,7 @@ class Teams{
   team [27][1] = "American League";
   team [27][2] = "West";
   team [27][3] = "Rickey Henderson";
-  team [27][4] = "RingCentral Coliseum";
+  team [27][4] = "RingCentral\nColiseum";
   team [27][5] = "Oakland";
 
   // Seattle Mariners
