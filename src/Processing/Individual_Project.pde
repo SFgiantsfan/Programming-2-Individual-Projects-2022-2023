@@ -10,6 +10,8 @@ Teams team = new Teams();
 PImage MLB, Braves;
 int x, y, w, h, t, screen;
 float k;
+Table infoT;;
+TextBox text;
 
 void setup() {
   size (1000, 1000);
@@ -22,6 +24,7 @@ void setup() {
   t = int(k);
   correct = false;
   play = true;
+  infoT = loadTable("infoT.csv", "header");
   // Was 750 for y
   buttons[0] = new Button(250, 750, 200, 45, "Team Name Guesser", color(0), color(100));
   buttons[1] = new Button(600, 750, 150, 45, "Stadium Tracker", color(0), color(100));
@@ -78,6 +81,7 @@ void setup() {
   MLB = loadImage("MLB.jpg");
   tng = false;
   st = false;
+  text = new TextBox(150, 150, 200, 30);
 }
 
 void draw() {
@@ -92,6 +96,9 @@ void draw() {
     break;
   case 2:
     stadiumTracker();
+    break;
+  case 3:
+    Stadium();
     break;
   }
 }
@@ -118,6 +125,12 @@ void mousePressed() {
   if (buttons[3].on) {
     screen = 1;
   }
+  
+  //for (int a = 0; a>0; a++){
+    if (staB[0].on){
+      rating();
+    }
+  //}
 }
 
 void startScreen() {
@@ -169,37 +182,20 @@ void teamNameGuesser() {
   
   t1.play(t);
 
-  //fill (0);
-  //textAlign(CENTER);
-  //text("Welcome! Take your first guess!", width/2, 20);
-
-  //if (correct == true) {
-  //  text("You got it!", width/2, 50);
-  //  text(team.team[t][1], width/2, 100);
-  //  text(team.team[t][2], width/2, 120);
-  //  text(team.team[t][3], width/2, 140);
-  //  text(team.team[t][4], width/2, 160);
-  //  text(team.team[t][5], width/2, 180);
-  //} else if (t1.guesses==1) {
-  //  text(team.team[t][1], width/2, 100);
-  //} else if (t1.guesses==2) {
-  //  text(team.team[t][1], width/2, 100);
-  //  text(team.team[t][2], width/2, 120);
-  //} else if (t1.guesses==3){
-  //  text(team.team[t][1], width/2, 100);
-  //  text(team.team[t][2], width/2, 120);
-  //  text(team.team[t][3], width/2, 140);
-  //} else if (t1.guesses==4){
-  //  text(team.team[t][1], width/2, 100);
-  //  text(team.team[t][2], width/2, 120);
-  //  text(team.team[t][3], width/2, 140);
-  //  text(team.team[t][4], width/2, 160);
-  //} else if (t1.guesses==5){
-  //  text(team.team[t][1], width/2, 100);
-  //  text(team.team[t][2], width/2, 120);
-  //  text(team.team[t][3], width/2, 140);
-  //  text(team.team[t][4], width/2, 160);
-  //  text(team.team[t][5], width/2, 180);
-  //}
 }
-//}
+
+void Stadium() {
+  
+}
+
+void rating () {
+  text.draw();
+  TableRow r = infoT.addRow();
+  r.setString("Rating", text.textValue);
+}
+
+void Notes() {
+  text.draw();
+  TableRow n = infoT.addRow();
+  n.setString("Notes", text.textValue);
+}
