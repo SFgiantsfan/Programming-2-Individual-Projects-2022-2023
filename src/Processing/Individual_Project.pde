@@ -219,12 +219,6 @@ void rating () {
   
 }
 
-//void keyPressed() {
-//  if (key == ENTER) {
-//    screen = 4;
-//  }
-//}
-
 void notes() {
   fill(0);
   textAlign(CENTER);
