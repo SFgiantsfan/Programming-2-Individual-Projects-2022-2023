@@ -24,6 +24,7 @@ The data I will need is the data for the MLB teams such as stadium, division, le
 
 #### Stadium Tracker
 ![Stadium Tracker](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Stadium%20Tracker.PNG?raw=true)
+Unfortunately, I was only able to get this to function for Truist Park.
 
 #### Executable 
 * [Executable](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/app/Individual_Project.exe)
