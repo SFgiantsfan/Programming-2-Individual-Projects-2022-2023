@@ -5,6 +5,12 @@ I am going to do an app with two different apps inside of it. The first app is g
 
 The data I will need is the data for the MLB teams such as stadium, division, leauge, etc.
 
+#### Year 2 Concepts
+* GUI Controls (Text Box, and Buttons)
+* Inheritance
+* Multidimensional Arrays
+* Writing and Reading from a file
+
 ![Flowchart](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Individual%20Project%20Flowchart%2012-19-22.jpg?raw=true)
 
 ![Class Diagram](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Individual%20Project%20Class%20Diagram%20(Updated%203-2-23).jpg?raw=true)
@@ -18,8 +24,10 @@ The data I will need is the data for the MLB teams such as stadium, division, le
 #### Stadium Tracker
 ![Stadium Tracker](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Stadium%20Tracker.PNG?raw=true)
 
-#### Executable
+#### Executable 
 * [Executable](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/app/Individual_Project.exe)
+
+For some reason my home computer only lets me do Windows so I'll update with Mac when I get back to school.
 
 #### Source Code
 * [Code](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/tree/main/src/Processing)
