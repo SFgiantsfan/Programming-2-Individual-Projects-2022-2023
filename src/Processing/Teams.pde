@@ -12,7 +12,7 @@ class Teams{
   team [0][1] = "National League";
   team [0][2] = "East";
   team [0][3] = "Henry Aaron";
-  team [0][4] = "Truist Part";
+  team [0][4] = "Truist Park";
   team [0][5] = "Atlanta";
   
   //Miami Marlins
