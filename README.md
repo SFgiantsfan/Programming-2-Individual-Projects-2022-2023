@@ -32,10 +32,15 @@ For some reason my home computer only lets me do Windows so I'll update with Mac
 #### Source Code
 * [Code](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/tree/main/src/Processing)
 
+#### Web Portfolio
+![Web Portfolio Link](https://sfgiantsfan.github.io/Programming-Portfolio-2021-2022/)
+
+
 
 ### Java Runnable Entry Point
 Entry Point: https://replit.com/@ETHANREYNOLDS8/Individual-Project#Main.java
-![Entry point](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/FirstEntrypointMLBApp.PNG?raw=true);
+[Entry point](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/FirstEntrypointMLBApp.PNG?raw=true); 
+
 
 #### Documentation
 
