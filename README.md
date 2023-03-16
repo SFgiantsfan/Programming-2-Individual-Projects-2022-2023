@@ -33,7 +33,7 @@ For some reason my home computer only lets me do Windows so I'll update with Mac
 * [Code](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/tree/main/src/Processing)
 
 #### Web Portfolio
-[Web Portfolio Link](https://sfgiantsfan.github.io/Programming-Portfolio-2021-2022/)
+* [Web Portfolio Link](https://sfgiantsfan.github.io/Programming-Portfolio-2021-2022/)
 
 
 
