@@ -1,4 +1,5 @@
 # Programming 2 Individual Project
+### By: Ethan Reynolds
 
 ## MLB Stadium Tracker
 I am going to do an app with two different apps inside of it. The first app is going to be an app where you can store inforation about the MLB stadiums you have been to. I am thinking I will either use an array list or a linked list to store the data but I'm still figuring that out. The second app is a MLB Team Name guesser. It will let you guesses and every wrong guess it will tell you more information about the team. As of now I am thinking that these apps will share a 2 dimensional array formatted as a table. The apps will have accses to the array through inheritance. 
