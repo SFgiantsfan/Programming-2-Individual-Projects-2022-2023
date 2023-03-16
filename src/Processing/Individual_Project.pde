@@ -1,7 +1,7 @@
 // Ethan Reynolds || AP Programming Individual Project || 2023
 
 boolean play, tng, st, correct;
-Button[] buttons = new Button[4];
+Button[] buttons = new Button[6];
 Button[] teamsB = new Button[30];
 Button[] staB = new Button[32];
 StadiumTracker s1 = new StadiumTracker();
@@ -10,7 +10,7 @@ Teams team = new Teams();
 PImage MLB, Braves;
 int x, y, w, h, t, screen;
 float k;
-Table infoT;;
+Table infoT;
 TextBox text;
 
 void setup() {
@@ -30,6 +30,8 @@ void setup() {
   buttons[1] = new Button(600, 750, 150, 45, "Stadium Tracker", color(0), color(100));
   buttons[2] = new Button(30, 50, 150, 45, "Home", color(0), color(100));
   buttons[3] = new Button(750, 50, 150, 45, "Play Again", color(0), color(100));
+  buttons[4] = new Button(750, 750, 150, 45, "Notes", color(0), color(100));
+  buttons[5] = new Button(750, 750, 150, 45, "Back", color(0), color(100));
   
   //x+=40;
   for (int t=0; t<30; t++) {
@@ -81,7 +83,8 @@ void setup() {
   MLB = loadImage("MLB.jpg");
   tng = false;
   st = false;
-  text = new TextBox(150, 150, 200, 30);
+  text = new TextBox(width/2, height/2, 200, 30);
+  
 }
 
 void draw() {
@@ -98,7 +101,10 @@ void draw() {
     stadiumTracker();
     break;
   case 3:
-    Stadium();
+    rating();
+    break;
+  case 4:
+    notes();
     break;
   }
 }
@@ -128,9 +134,17 @@ void mousePressed() {
   
   //for (int a = 0; a>0; a++){
     if (staB[0].on){
-      rating();
+      screen = 3;
     }
   //}
+  
+  if(buttons[4].on) {
+    screen = 4;
+  }
+  
+  if(buttons[5].on) {
+    screen = 2;
+  }
 }
 
 void startScreen() {
@@ -155,17 +169,19 @@ void startScreen() {
 
 void stadiumTracker() {
   background (210);
-  buttons[0].delete();
   fill(0);
   textAlign(CENTER);
-  //buttons[2].display();
-  //buttons[2].hover(mouseX, mouseY);
   text("What stadium did you go to?", width/2, 20);
 
   for (int b=0; b<30; b++) {
     staB[b].display();
     staB[b].hover(mouseX, mouseY);
   }
+  
+  buttons[2].display();
+  buttons[2].hover(mouseX, mouseY);
+  buttons[3].display();
+  buttons[3].hover(mouseX, mouseY);
 }
 
 void teamNameGuesser() {
@@ -189,13 +205,34 @@ void Stadium() {
 }
 
 void rating () {
+  fill(0);
+  textAlign(CENTER);
+  text("What do you rate the stadium out of 10?", width/2, 20);
+  buttons[4].display();
+  buttons[4].hover(mouseX, mouseY);
   text.draw();
   TableRow r = infoT.addRow();
   r.setString("Rating", text.textValue);
+  //infoT.clearRows();
+  saveTable(infoT, "infoT.csv");
+  println(text.textValue);
+  
 }
 
-void Notes() {
+//void keyPressed() {
+//  if (key == ENTER) {
+//    screen = 4;
+//  }
+//}
+
+void notes() {
+  fill(0);
+  textAlign(CENTER);
+  text("Write any notes you have:", width/2, 20);
+  buttons[5].display();
+  buttons[5].hover(mouseX, mouseY);
   text.draw();
   TableRow n = infoT.addRow();
   n.setString("Notes", text.textValue);
+  saveTable(infoT, "infoT.csv");
 }
