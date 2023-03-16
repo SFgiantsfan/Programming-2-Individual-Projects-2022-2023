@@ -5,25 +5,23 @@ I am going to do an app with two different apps inside of it. The first app is g
 
 The data I will need is the data for the MLB teams such as stadium, division, leauge, etc.
 
-![Logo]()
 ![Flowchart](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Individual%20Project%20Flowchart%2012-19-22.jpg?raw=true)
 
 ![Class Diagram](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Individual%20Project%20Class%20Diagram%20(Updated%203-2-23).jpg?raw=true)
 
-### Runnable Entry Point
+#### Start Screen
+![Start Screen](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/MLB%20App%20Start%20Screen.PNG?raw=true)
+
+#### Team Name Guesser
+![Team Name Guesser] (https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Team%20Name%20Guesser.PNG?raw=true)
+
+#### Stadium Tracker
+![Stadium Tracker] (https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Stadium%20Tracker.PNG?raw=true)
+
+
+### Java Runnable Entry Point
 Entry Point: https://replit.com/@ETHANREYNOLDS8/Individual-Project#Main.java
 ![Entry point](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/FirstEntrypointMLBApp.PNG?raw=true);
 
 #### Documentation
 
-## Game?
-I'm not sure what it would look like yet but I think it would be cool to do some sort of game. 
-
-![Logo]()
-
-#### Documentation
-
-
-
-
-This is all I have for now but I am still brainstorming more Ideas and I will add them as I think of them.
