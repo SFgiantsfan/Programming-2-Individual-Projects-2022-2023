@@ -13,10 +13,10 @@ The data I will need is the data for the MLB teams such as stadium, division, le
 ![Start Screen](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/MLB%20App%20Start%20Screen.PNG?raw=true)
 
 #### Team Name Guesser
-![Team Name Guesser] (https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Team%20Name%20Guesser.PNG?raw=true)
+![Team Name Guesser](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Team%20Name%20Guesser.PNG?raw=true)
 
 #### Stadium Tracker
-![Stadium Tracker] (https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Stadium%20Tracker.PNG?raw=true)
+![Stadium Tracker](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/images/Stadium%20Tracker.PNG?raw=true)
 
 
 ### Java Runnable Entry Point
