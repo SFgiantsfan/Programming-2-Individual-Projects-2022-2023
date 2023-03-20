@@ -27,7 +27,7 @@ The data I will need is the data for the MLB teams such as stadium, division, le
 * Unfortunately, I was only able to get this to function for Truist Park.
 
 #### Executable 
-* [Mac M1]()
+* [Mac M1](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/app/macos-aarch64.zip)
 * [Windows]()
 
 For some reason my home computer only lets me do Windows so I'll update with Mac when I get back to school.
