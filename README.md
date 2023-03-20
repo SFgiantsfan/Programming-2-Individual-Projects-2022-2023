@@ -30,8 +30,6 @@ The data I will need is the data for the MLB teams such as stadium, division, le
 * [Mac M1](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/app/macos-aarch64.zip)
 * [Windows](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/blob/main/app/windows-amd64.zip)
 
-For some reason my home computer only lets me do Windows so I'll update with Mac when I get back to school.
-
 #### Source Code
 * [Code](https://github.com/SFgiantsfan/Programming-2-Individual-Projects-2022-2023/tree/main/src/Processing)
 
